@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2tod3wnblg8i"]
+
+[ext_resource type="Script" uid="uid://ciww2b346nxts" path="res://Scripts/main.gd" id="1_r150o"]
+
+[node name="Main" type="Node2D" unique_id=1719267216]
+script = ExtResource("1_r150o")
+
+[node name="ParticlesContainer" type="Node2D" parent="." unique_id=1103027708]
