@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://2tod3wnblg8i"]
 
 [ext_resource type="Script" uid="uid://ciww2b346nxts" path="res://Scripts/main.gd" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://bq5u7dmwqtoj5" path="res://Scenes/TypingTest.tscn" id="2_idj7w"]
 
 [node name="Main" type="Node2D" unique_id=1719267216]
 script = ExtResource("1_r150o")
 
 [node name="ParticlesContainer" type="Node2D" parent="." unique_id=1103027708]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2006586438]
+
+[node name="TypingTest" parent="CanvasLayer" unique_id=876647137 instance=ExtResource("2_idj7w")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_top = 50.0
+offset_bottom = 50.0
+grow_vertical = 1

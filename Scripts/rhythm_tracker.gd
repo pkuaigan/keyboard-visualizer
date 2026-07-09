@@ -18,7 +18,7 @@ func get_intensity():
 	var gap := float(now - last_keystroke_time)
 	last_keystroke_time = now
 	
-	if gap >= 2000: # Reset,, ie the user looked away, stopped typing, etc
+	if gap >= 5000: # Reset,, ie the user looked away, stopped typing, etc
 		smoothed_intensity = neutral_intensity
 		return smoothed_intensity
 	
