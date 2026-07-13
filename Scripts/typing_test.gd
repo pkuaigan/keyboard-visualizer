@@ -11,6 +11,7 @@ enum CharState { UNTYPED, CORRECT, INCORRECT }
 
 var target : String = ""
 var output_text : String = ""
+var current_input : String
 var states : Array = []
 var letters_typed : int
 var total_letters : int
@@ -47,6 +48,13 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if letters_typed >= total_letters:
 		return
+		
+	if letters_typed > 0 and event.keycode == KEY_BACKSPACE:
+		letters_typed -= 1
+		states[letters_typed] = CharState.UNTYPED
+		_handle_colours()
+		return
+		
 	if event.unicode == 0:
 		return
 
