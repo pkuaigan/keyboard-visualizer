@@ -12,7 +12,7 @@ grow_vertical = 2
 script = ExtResource("1_2g6k3")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=892579867]
-custom_minimum_size = Vector2(1500, 300)
+custom_minimum_size = Vector2(1500, 350)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -26,6 +26,7 @@ grow_horizontal = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.8, 0.8, 1, 1)
 theme_override_font_sizes/normal_font_size = 72
 theme_override_font_sizes/bold_font_size = 72
 theme_override_font_sizes/bold_italics_font_size = 72
@@ -34,6 +35,6 @@ theme_override_font_sizes/mono_font_size = 72
 bbcode_enabled = true
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis varius sem, non auctor nisi dapibus sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc aliquet nulla vitae ligula interdum, vitae dictum nisi pulvinar. Mauris tincidunt rhoncus pulvinar. Proin non sem sit amet turpis ultrices luctus in ut metus. Vestibulum in augue vitae lorem posuere bibendum et at massa. Cras nec sem pellentesque, facilisis leo non, ultrices eros."
 scroll_active = false
-autowrap_mode = 2
+autowrap_mode = 0
 horizontal_alignment = 1
 vertical_alignment = 1
